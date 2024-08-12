@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link rel="stylesheet" type="text/css" href="../../style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../../css/splide-core.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/splide-default.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/splide.min.css">
+<script src="../../js/splide.min.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../../assets/icons/favicon.png">
+    <title>Catherine Luong</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#image-carousel', {
+                heightRatio: 1,
+                rewind: true,
+            }).mount();
+        });
+    </script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="../../index.html">Catherine Luong</a>
+            <a href="../../index.html"><img src="../../assets/icons/favicon.png"></a>
+        </div>
+        <nav>
+            <ul>
+                <!-- <a href="../pages/contact.html">contact</a> -->
+                <a class="active" href="../../pages/work.html">work</a>
+                <a href="../about.html">about</a>
+                <a href="../../index.html">home</a>
+            </ul>
+        </nav>
+    </div>
+    <main style="margin-bottom: 2%;">
+        <div class="showcase">
+            <main>
+                <section id="image-carousel" class="splide" aria-label="Project Images">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="../../assets/code/grave_title.png">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="../../assets/code/grave_game1.png">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="../../assets/code/grave_game2.png">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="../../assets/code/grave_ending.png">
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <p class="title">Graveyard Shift</p>
+        <p class="year">(2023)</p>
+        <p style="margin-left: 20%; margin-right: 20%;">
+            A game where a tired overworked retail worker needs to fight her way out a ghost-infested
+            mall.
+            <br>
+            <br>
+            This is a top down shooter game that I worked on with Julee Nhek (map and UI designer) and
+            Madison Kolley (programmer). I drew the assets from the sprites, mall objects, and title/ending
+            pages.
+
+            <br>
+            <br>
+            <a style="color: #D36B00;" href="https://meowitsmadi.itch.io/graveyard-shift">You, too, can
+                fight ghosts.</a>
+            <br>
+            <br>
+            <b>Tool: </b><i>Adobe Photoshop, Premiere Pro</i>
+        </p>
+        <a href="../work.html"><button style="margin-top: 2%;">Check out my other works!</button></a>
+    </main>
+
+    <footer>
+        <p style="color: #E6D2AA; max-width: 100%; font-size:20px; padding-bottom: 10px;">
+            My Social Media          
+        </p>
+        <div class="row" id="socials">
+            <a href="https://www.linkedin.com/in/catherine-luong-2b8b91159/"><img
+                    src="../../assets/icons/linkedin.webp"></a>
+            <a href="mailto: catherine.b.luong@gmail.com"><img src="../../assets/icons/mail.webp"> </a>
+        </div>
+        <p style="color: #E6D2AA; max-width: 100%; font-size:15px; padding-top: 10px; ">
+            © Catherine Luong 2023
+        </p>
+    </footer>
+
+</body>
+
+</html>

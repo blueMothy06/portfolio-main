@@ -1,0 +1,43 @@
+<footer>
+    <p style="color: #E6D2AA; max-width: 100%; font-size:20px; padding-bottom: 10px;">
+        My Social Media
+    </p>
+    <div class="row" id="socials">
+        <div class="column">
+            <a href="https://www.instagram.com/pv_scylla/"><img src="../assets/icons/insta.png"> </a>
+        </div>
+        <div class="column">
+            <a href="https://www.linkedin.com/in/catherine-luong-2b8b91159/"><img
+                    src="../assets/icons/linkedin.png"></a>
+        </div>
+        <div class="column">
+            <a href="https://pv-scylla.itch.io/"><img src="../assets/icons/itch.png"> </a>
+        </div>
+        <div class="column">
+            <a href="mailto: catherineluongart@gmail.com"><img src="../assets/icons/mail.png"> </a>
+        </div>
+    </div>
+    <p style="color: #E6D2AA; max-width: 100%; font-size:15px; padding-top: 10px; ">
+        © Catherine Luong 2023
+    </p>
+</footer>
+<script>
+    //* Loop through all dropdown buttons to toggle between hiding and
+    /* showing its dropdown content - This allows the user to have multiple
+    /* dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+  
+    for (i = 0; i < dropdown.length; i++) {
+      dropdown[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var dropdownContent = this.nextElementSibling;
+        if (dropdownContent.style.display === "block") {
+          dropdownContent.style.display = "none";
+        } else {
+          dropdownContent.style.display = "block";
+        }
+      });
+    }
+  </script>
+  

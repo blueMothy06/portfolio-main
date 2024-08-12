@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<link rel="stylesheet" type="text/css" href="../../style.css">
+<link rel="stylesheet" type="text/css" href="../../css/splide-core.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/splide-default.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/splide.min.css">
+<script src="../../js/splide.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../../assets/icons/favicon.png">
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            new Splide('#image-carousel', {
+                heightRatio: 1,
+                rewind: true,
+            }).mount();
+        });
+    </script>
+    <title>Catherine Luong</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <a href="../../index.html">Catherine Luong</a>
+            <a href="../../index.html"><img src="../../assets/icons/favicon.png"></a>
+        </div>
+        <nav>
+            <ul>
+                <!-- <a href="../pages/contact.html">contact</a> -->
+                <a class="active" href="../../pages/work.html">work</a>
+                <a href="../about.html">about</a>
+                <a href="../../index.html">home</a>
+            </ul>
+        </nav>
+    </div>
+    <div class="showcase">
+        <main>
+            <section id="image-carousel" class="splide" aria-label="Project Images">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img src="../../assets/code/calamity1.webp">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="../../assets/code/calamity2.webp">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="../../assets/code/calamity3.webp">
+                        </li>
+                        <li class="splide__slide">
+                            <img src="../../assets/code/calamity4.webp">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+    </div>
+    <p class="title">i guess it's the Calamity now?</p>
+    <p class="year">(2022)</p>
+    <p style="margin-left: 20%; margin-right: 20%;">
+        Created a point-and-click game in p5.JS, depicting the concept of running away from
+        things that scare you. This was another project to get more comfortable with p5.JS,
+        which I used p5.clickable for most of the button interactivity.
+        <br>
+        <br>
+        <a style="color: #D36B00;" href="https://pv-scylla.itch.io/i-guess-its-the-calamity-now">You, too, can
+            experience a mid-life
+            crisis.</a>
+        <br>
+        <br>
+        <b>Tool: </b><i>HTML, CSS, p5.JS, Adobe Photoshop</i>
+    </p>
+    <a href="../work.html"><button style="margin-top: 2%;">Check out my other works!</button></a>
+    <br>
+    <br>
+    </main>
+
+    <footer>
+        <p style="color: #E6D2AA; max-width: 100%; font-size:20px; padding-bottom: 10px;">
+            Contact Me!
+           
+        </p>
+        <div class="row" id="socials">
+            <a href="https://www.linkedin.com/in/catherine-luong-2b8b91159/"><img
+                    src="../../assets/icons/linkedin.webp"></a>
+            <a href="mailto: catherine.b.luong@gmail.com"><img src="../../assets/icons/mail.webp"> </a>
+        </div>
+        <p style="color: #E6D2AA; max-width: 100%; font-size:15px; padding-top: 10px; ">
+            © Catherine Luong 2023
+        </p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,669 @@
+@font-face {
+  font-family: Varela Round;
+  src: url(VarelaRound-Regular.ttf);
+}
+
+@font-face {
+  font-family: Sacramento, sans-serif;
+  src: url(Sacramento-Regular.ttf);
+}
+
+
+@import url("https://fonts.googleapis.com/css?family=Varela-Round' rel='stylesheet");
+@import url("https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet");
+
+html {
+  font-family: 'Varela Round', sans-serif;
+  width: auto;
+  background-color: #F1EFDC;
+  color: #6C3057;
+  margin: 0;
+}
+
+h1 {
+  color: #D36B00;
+  font-size: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
+  font-family: 'Varela Round', sans-serif;
+}
+
+h2 {
+  color: #F1EFDC;
+  font-size: 25px;
+  margin-right: 10%;
+  margin-left: 10%;
+  border-bottom: 3px solid #DFA56A;
+}
+
+.title {
+  color: #D36B00;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+}
+
+.year {
+  color: #8A6475;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: normal;
+  margin-right: 10%;
+  margin-left: 10%;
+  line-height: 1.4;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  padding-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 0px;
+}
+
+li {
+  margin-left: 10%;
+  font-size: 18px;
+  list-style-type: none;
+}
+
+::selection {
+  color: white;
+  background: orange;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ---------------------- Button  ---------------------*/
+
+button {
+  background-color: #d38434;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+  font-family: 'Varela Round', sans-serif;
+  border-radius: 8px;
+  top: 11%;
+  margin: auto;
+  display: block;
+}
+
+button :hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/* ---------------------- Navbar  ---------------------*/
+
+.navbar {
+  padding: 0;
+  text-transform: uppercase;
+  margin-right: auto;
+  opacity: 100%;
+}
+
+.navbar nav {
+  display: block;
+  margin-left: auto;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #8A6475;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: orange;
+}
+
+.navbar ul .active {
+  color: #d38434;
+  border-bottom: 3px solid #DFA56A;
+  border-radius: 0px;
+}
+
+
+.logo {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  animation: wiggle 2s linear;
+  float: left;
+  font-size: 1.2em;
+}
+
+.logo img {
+  height: 30px;
+  width: 100%;
+}
+
+.logo a {
+  color: #42032C;
+}
+
+/* ---------------------- This is Homepage  ---------------------*/
+
+.frame {
+  margin-top: 5%;
+  text-align: center;
+}
+
+.frame img {
+  width: 200px;
+  height: 250px;
+  border-radius: 225px;
+  object-fit: cover;
+}
+
+.face {
+  min-width: 250px;
+  padding: 5px;
+  border: 3px dashed #D36B00;
+}
+
+.home {
+  text-align: center;
+}
+
+/* ---------------------- homepage Speech Bubble ---------------------*/
+
+.speech-bubble {
+  background-color: #6C3057;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.speech-bubble img {
+  display: inline-block;
+  margin-top: 10%;
+  transition: 0.5s;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  padding: 15px;
+  border: #DFA56A dashed;
+}
+
+.speech-bubble img:hover {
+  transform: scale(1.05);
+}
+
+.speech-bubble p {
+  text-align: left;
+  /* max-width: 150px; */
+  display: inline-block;
+}
+
+.speech-bubble a {
+  color: orange;
+  text-decoration: none;
+  /* max-width: 150px; */
+  display: inline-block;
+  text-align: left;
+}
+
+.speech-column {
+  flex: 100%;
+  padding: 5px;
+
+}
+
+/* ---------------------- This is about page  ---------------------*/
+
+.about-page {
+  margin-top: 5%;
+  display: flex;
+  padding-left: 10%;
+}
+
+.about-page img {
+  width: 300px;
+  height: 300px;
+  border-radius: 225px;
+  object-fit: cover;
+}
+
+
+/* ---------------------- This is Side-bar ---------------------*/
+
+.side-bar {
+  grid-column: 1;
+  position: sticky;
+  top: 0vw;
+  background: #6C3057;
+  color: #F1EFDC;
+  border-radius: 0px 0px 15px 15px;
+  padding: 5% 0px 45px 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  justify-content: start;
+  margin-top: 5%;
+  max-width: 200px;
+  font-size: small;
+}
+
+.side-bar a {
+  text-decoration: none;
+  color: #F1EFDC;
+  font-family: "Varela Round", sans-serif;
+  font-size: 120%;
+  font-weight: 600;
+  padding: 10px 0;
+  margin: 0px 0px 0px 30px;
+  transition: 0.3s ease;
+}
+
+.side-bar a:hover {
+  color: #d38434;
+  padding-right: 20px;
+  margin-left: 70px;
+  border-bottom: 3px solid #d38434;
+  transition: 0.3s ease;
+}
+
+/* ---------------------- This is gallery ---------------------*/
+.work-page {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 185px 1fr;
+  grid-column-gap: 50px;
+  align-items: start;
+  margin-left: 10%;
+}
+
+.p-tag {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  margin-left: 35%;
+  text-align: center;
+  border-bottom: 3px solid #d38434;
+}
+
+.gallery {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: auto;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.gallery img {
+  height: 250px;
+  padding: 5px;
+  transition: 0.5s;
+  object-fit: cover;
+  border-radius: 15px;
+  width: 250px;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.gallery-body {
+  grid-column: 2;
+}
+
+/* overlay */
+* {
+  box-sizing: border-box
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  max-width: 250px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity: 0;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  transform: scale(0.95);
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+  transition: 0.5s ease;
+  transform: scale(1.0);
+}
+
+
+.c-study {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+/* ---------------------- This is TOP button ---------------------*/
+
+.top-button {
+  /* float: right; */
+  position: fixed;
+  bottom: 5%;
+  right: 0%;
+}
+
+.top-button a {
+  text-decoration: none;
+  color: #F1EFDC;
+  background: #6C3057;
+  font-family: var(--font1);
+  font-size: 110%;
+  font-weight: 600;
+  margin-bottom: 30px;
+  padding: 10px 0 10px 15px;
+  padding-right: 4vw;
+  border-radius: 10px 0 0 10px;
+  transition: 0.3s ease;
+}
+
+.top-button :hover {
+  background: #d38434;
+}
+
+/* ---------------------- carousel ---------------------*/
+.splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-style: solid;
+  border-width: 0.5em;
+}
+
+.splide__slide.is-active {
+  opacity: 1;
+}
+
+
+/* ---------------------- showcase ---------------------*/
+
+.showcase {
+  margin: 60px auto;
+  padding: 5px 5px 1px 5px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.showcase img {
+  border-radius: 25px;
+  border: #d38434 solid;
+  padding: 5px;
+
+}
+
+/* ---------------------- keyframes ---------------------*/
+
+.case-study {
+  margin: 60px auto;
+  padding: 5px 5px 1px 5px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  max-width: 70%;
+}
+
+.case-study img {
+  border-radius: 25px;
+  border: #d38434 solid;
+  padding: 5px;
+}
+
+/* ---------------------- keyframes ---------------------*/
+
+
+/* Keyframes */
+@keyframes wiggle {
+
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+
+  15% {
+    transform: rotateZ(-15deg);
+  }
+
+  20% {
+    transform: rotateZ(10deg);
+  }
+
+  25% {
+    transform: rotateZ(-10deg);
+  }
+
+  30% {
+    transform: rotateZ(6deg);
+  }
+
+  35% {
+    transform: rotateZ(-4deg);
+  }
+
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+/* attempt to grid */
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 100%;
+  padding: 5px;
+}
+
+footer {
+  background-color: #42032C;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 20px;
+  padding-top: 5%;
+  bottom: 0;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+
+}
+
+footer a {
+  display: block;
+  color: #DFA56A
+}
+
+
+#socials img {
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+
+/**mobile friendly*/
+@media screen and (max-width: 800px) {
+  html {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    max-width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  li {
+    margin-left: 0;
+    list-style-type: none;
+  }
+
+  img {
+    width: 80%;
+    height: 80%;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .speech-bubble {
+    margin: 0;
+  }
+
+  .navbar {
+    padding: 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    float: none
+  }
+
+  .navbar nav {
+    display: block;
+  }
+
+  .work-page {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  .side-bar {
+    flex-direction: row;
+    top: 0;
+    width: 100%;
+    padding: 0px;
+    border-right: 0;
+    padding-bottom: 10px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    z-index: 2;
+    background: #6C3057;
+    max-width: 100%;
+  }
+
+  .side-bar a {
+    text-decoration: none;
+    color: #F1EFDC;
+    font-family: "Varela Round", sans-serif;
+    font-size: 100%;
+    padding: 15px 20px 15px 20px;
+    border-bottom: 1px solid var(#d38434);
+    margin: 0;
+  }
+
+  .side-bar a .active {
+    background: #d38434;
+  }
+
+
+  .about-page {
+    display: inline-block;
+  }
+
+  .gallery {
+    display: inline-block;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .p-tag {
+    text-align: center;
+  }
+
+  .showcase {
+    margin: 60px auto;
+    padding: 5px 5px 1px 5px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  .c-study {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .case-study {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    max-width: 100%;
+    max-height: auto;
+  }
+
+  #socials img {
+    width: 15%;
+    display: inline;
+  }
+
+  .logo img {
+    height: 30px;
+    width: auto;
+  }
+
+}
